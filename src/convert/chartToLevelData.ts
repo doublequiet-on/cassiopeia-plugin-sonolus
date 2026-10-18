@@ -308,7 +308,7 @@ export function chartToLevelData(chart: InternalChart, offset = 0): LevelData {
     }
   };
 
-  append({ archetype: "Initialization", data: {}, sim: false });
+  append({ archetype: "Initialization", data: { ourNotesTimingProfile: 1 }, sim: false });
   append({ archetype: "Stage", data: {}, sim: false });
   for (const bpm of chart.bpmChanges) {
     append({
